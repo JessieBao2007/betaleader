@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dynamic Leaderboard</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+ <script>
+    function openCustomPopup() {
+    var url = 'popup.html';
+    var windowName = 'Custom Pop-up';
+    var windowFeatures = 'width=500,height=300,toolbar=no,location=no,menubar=no';
+
+    // Open the pop-up window
+    window.open(url, windowName, windowFeatures);
+  }
+ </script>
+  
+  
+</head>
+<body>
+  <h1>Leaderboard</h1>
+  <table id="leaderboard">
+    </tr>
+    <tr>
+      <th>Rank</th>
+      <th>Name</th>
+      <th>Score</th>
+      <th>More</th>
+    </tr>
+  </table>
+
+  <form id="add-user-form">
+    <input type="text" id="name-input" placeholder="Enter your name">
+    <button type="submit">test  User</button>
+  </form>
+
+  <button id="add-points-btn">test random points</button>
+  
+  <script src="test.js"></script>
+</body>
+</html>
